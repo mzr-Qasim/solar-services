@@ -1,0 +1,15 @@
+$black-color: #000000;
+$white-color: #ffffff;
+$primary-color: #b3da44;
+
+
+body{
+    overflow: hidden;
+    overflow-y: auto;
+    font-family: "Roboto", serif;
+}
+
+h1, h2, h3, h4, p, figure, ul{
+    margin: 0;
+    padding: 0;
+}
