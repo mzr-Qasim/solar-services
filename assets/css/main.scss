@@ -2,61 +2,55 @@
 @import '../css/partials/fonts';
 @import '../css/partials/base';
 
-
-.our-solar-services-wrapper {
+.features-wrapper{
+    width: 100%;
+}
+.features-inner{
+    width: 100%;
+    min-height: 80vh;
     position: relative;
+    padding: calc(1.25rem + .5vw) calc(1rem + .25vw) calc(1rem + .25vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.25rem;
 
-    figure {
-        img {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            object-fit: cover;
-        }
-        .image-overlay{
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: $black-color;
-            opacity: 0.8;
-            width: 100%;
-            height: 100%;
-            z-index: -1!important;
-        }
-
-    }
-}
-
-.title{
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: 2;
-    h1{
-        color: $primary-color;
+    .row [class^="col-"]{
+        padding-bottom: 1rem;
     }
 
-}
-
-.our-services {
-    padding: 30rem 0 3rem 0;
-
-
-    .content-box {
-        padding: 1rem;
-        background-color: $white-color;
+    img{
+        width: 100%;
         height: 100%;
-        h4{
-            font-size: calc(1rem + .2vw);
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }
-        p{
-            font-size: calc(0.8rem + .2vw);           
-        }
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+    }
 
+    &::after{
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, .7);
+        z-index: -1;
+    }
+    h2{
+        color: $primary-color;
+        text-align: center;
+    }
+
+    p.para{
+        color: $white-color;
+        max-width: 650px;
+        margin: auto auto 0;
+        text-align: center;
+        text-wrap: pretty;
+    }
+    .feaure-col{
+        background-color: $white-color;;
+        padding: 1.25rem;
+        height: 100%;
     }
 }
 
