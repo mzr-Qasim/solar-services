@@ -12019,7 +12019,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, p, figure, ul {
   height: 100%;
 }
 .our-services .content-box h4, .our-services .content-box .h4 {
+  font-size: calc(1rem + 0.2vw);
+  font-weight: 600;
   margin-bottom: 1rem;
+}
+.our-services .content-box p {
+  font-size: calc(0.8rem + 0.2vw);
 }
 
 @media (max-width: 768px) {
